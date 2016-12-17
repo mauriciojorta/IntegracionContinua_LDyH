@@ -97,7 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">LDyH.IntegracionContinua.Quicksort Class Reference</div>  </div>
 </div><!--header-->
@@ -109,11 +111,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html#a9f5107de11d7b94748d957fffb9173a5">sort</a> (int[] values)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html#ad14bccabdb4febe11d7508abc0979734">getNumbers</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html#a0f3c35b4a25bda865170445581c8a077">quicksort</a> (int low, int high)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html#a009e9122c41e6b4dbad0ee73a2a23a0b">exchange</a> (int i, int j)</td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad19edc49950e182e634c25b5841901a6"></a><!-- doxytag: member="LDyH::IntegracionContinua::Quicksort::numbers" ref="ad19edc49950e182e634c25b5841901a6" args="" -->
+int[]&#160;</td><td class="memItemRight" valign="bottom"><b>numbers</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba2ddfe604036e47689b37aadb2a0db"></a><!-- doxytag: member="LDyH::IntegracionContinua::Quicksort::number" ref="a6ba2ddfe604036e47689b37aadb2a0db" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>number</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Clase de algoritmo <a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html">Quicksort</a> </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Mauricio </dd></dl>
 </div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a009e9122c41e6b4dbad0ee73a2a23a0b"></a><!-- doxytag: member="LDyH::IntegracionContinua::Quicksort::exchange" ref="a009e9122c41e6b4dbad0ee73a2a23a0b" args="(int i, int j)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html#a009e9122c41e6b4dbad0ee73a2a23a0b">LDyH.IntegracionContinua.Quicksort.exchange</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Intercambia los valores entre dos enteros i y j </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>- Entero i </td></tr>
+    <tr><td class="paramname">j</td><td>- Entero j </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ad14bccabdb4febe11d7508abc0979734"></a><!-- doxytag: member="LDyH::IntegracionContinua::Quicksort::getNumbers" ref="ad14bccabdb4febe11d7508abc0979734" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -128,6 +175,41 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>el array de valores enteros ordenado </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0f3c35b4a25bda865170445581c8a077"></a><!-- doxytag: member="LDyH::IntegracionContinua::Quicksort::quicksort" ref="a0f3c35b4a25bda865170445581c8a077" args="(int low, int high)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html#a0f3c35b4a25bda865170445581c8a077">LDyH.IntegracionContinua.Quicksort.quicksort</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Algoritmo <a class="el" href="class_l_dy_h_1_1_integracion_continua_1_1_quicksort.html">Quicksort</a> para la ordenación de valores enteros en un array </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">low</td><td>- Menor valor de la iteración </td></tr>
+    <tr><td class="paramname">high</td><td>- Mayor valor de la iteración </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
