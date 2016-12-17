@@ -42,8 +42,8 @@ public class Quicksort  {
 
 /**
  * Algoritmo Quicksort para la ordenación de valores enteros en un array
- * @param low - Menor valor de la iteración
- * @param high - Mayor valor de la iteración
+ * @param low - Extremo izquierdo de subparte a ordenar
+ * @param high - Extremo derecho de subparte a ordenar
  */
 	private void quicksort(int low, int high) {
 		int i = low, j = high;
@@ -73,9 +73,9 @@ public class Quicksort  {
 
 
 /**
- * Intercambia los valores entre dos enteros i y j
- * @param i - Entero i
- * @param j - Entero j
+ * Intercambia los valores almacenados en los índices i y j del array
+ * @param i - Índice i de array
+ * @param j - Índice j de array
  */
 	private void exchange(int i, int j) {
 		int temp = numbers[i];
