@@ -1,0 +1,10 @@
+language: java
+
+sudo: false
+
+branches:
+  except:
+    - gh-pages
+
+script: mvn clean verify
+
