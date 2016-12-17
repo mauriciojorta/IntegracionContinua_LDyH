@@ -12,6 +12,7 @@ import org.junit.*;
 public class AppTest
 {
 	private Quicksort qs;
+
 	/**
 	 * Inicialización de objeto de clase de algoritmo QuickSort antes de cada test
 	 */
@@ -29,6 +30,9 @@ public class AppTest
 		qs = null;
 	}
 
+	/**
+	 * Pruebas del algoritmo de ordenación a arrays desordenados
+	 */
 	@Test
 	public void ordenacionArrayDesordenados()
 	{
@@ -44,6 +48,9 @@ public class AppTest
 		Assert.assertArrayEquals(new int[]{1,2,2,4}, qs.sort(array5));
 	}
 
+	/**
+	 * Pruebas del algoritmo de ordenación a arrays ordenados
+	 */
 	@Test
 	public void ordenacionArrayOrdenados()
 	{
@@ -57,6 +64,9 @@ public class AppTest
 		Assert.assertArrayEquals(array4, qs.sort(array4));
 	}
 
+	/**
+	 * Pruebas del algoritmo de ordenación a array nulos o vacíos
+	 */
 	@Test
 	public void deteccionEntradaInvalida()
 	{
