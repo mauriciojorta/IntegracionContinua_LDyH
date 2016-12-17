@@ -13,7 +13,7 @@ env:
   global:
     - GH_REPO_NAME: IntegracionContinua_LDyH
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
-    - GH_REPO_REF: github.com/mauriciojorta/IntegracionContinua_LDyH
+    - GH_REPO_REF: github.com/mauriciojorta/IntegracionContinua_LDyH.git
 
 # Install dependencies
 addons:
